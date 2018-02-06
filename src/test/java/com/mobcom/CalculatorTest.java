@@ -37,4 +37,10 @@ public class CalculatorTest {
     public void shouldSupportDivision() {
         assertEquals(2, calc.evaluate("4 2 /"), 0);
     }
+
+    @Test
+    public void shouldSupportEmptyExpressions() {
+        assertEquals(0, calc.evaluate(""), 0);
+        assertEquals(0, calc.evaluate(null), 0);
+    }
 }

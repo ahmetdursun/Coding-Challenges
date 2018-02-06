@@ -35,9 +35,9 @@ Returns a string ordinal based off of the number.
  */
 
 public class OrdinalConverter {
-    private static final int EDGE_CASES = 10;
+    private final int EDGE_CASES = 10;
 
-    public static String numberToOrdinal(Integer number) {
+    public String numberToOrdinal(Integer number) {
         String ordinal, ordinalSuffix;
 
         if (number.equals(0)) {
@@ -55,13 +55,13 @@ public class OrdinalConverter {
 
     }
 
-    private static boolean isEdgeCase(Integer number){
+    private boolean isEdgeCase(Integer number){
         int modeToTen = number % 10;
         int modeToHundred = number % 100;
         return ((modeToHundred - modeToTen) == EDGE_CASES);
     }
 
-    private static String determineOrdinalSuffix(Integer number){
+    private String determineOrdinalSuffix(Integer number){
         String ordinalSuffix;
         number = number % 10;
         switch (number){

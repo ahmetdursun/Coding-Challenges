@@ -11,15 +11,15 @@ Non-digits should never be masked.
  */
 
 public class CreditCard {
-    private static final int SIZE = 6;
-    private static final int NUMBER_OF_LASTCHARS_NOTTO_MASK = 4;
+    private final int SIZE = 6;
+    private final int NUMBER_OF_LASTCHARS_NOTTO_MASK = 4;
 
     /**
      * It is assumed that creditCardNumber starts with a digit and ends with 4 digits.
      * @param creditCardNumber
      * @return masked creditCardNumber
      */
-    public static String maskify(String creditCardNumber) {
+    public String maskify(String creditCardNumber) {
 
         if (creditCardNumber == null || creditCardNumber.isEmpty()) {
             return "";
