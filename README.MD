@@ -16,7 +16,7 @@ _"Your job is to create a calculator which evaluates expressions given to you in
 
 * Implemented in [Calculator](/src/main/java/com/mobcom/fintech/Calculator.java)
 
-### Number to Ordinal Conversion
+#### Number to Ordinal Conversion
 
 <em>"Finish the function numberToOrdinal, which should take a number and return it as a string with the correct ordinal indicator suffix (in English).
 
